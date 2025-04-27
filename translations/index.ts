@@ -16,8 +16,8 @@ export const translations = {
       title1: "مبادرة",
       title2: "مفاتيح العلوم",
       description: "مبادرة مفاتيح العلوم هي مبادرة تقوم على جهد تطوعي يضم مجموعة من الطﻼب واﻷكاديميين السوريين المقيمين في ألمانيا وأوروبا، بهدف تطوير التعليم العالي في سوريا عبر نقل أحدث المناهج واﻷدوات التعليمية المطبقة في الجامعات اﻷوروبية، وتعزيز البحث العلمي من خلال بناء جسور أكاديمية وثقافية بين سوريا والخارج.",
-      contactUs: "تواصل معنا",
-    },
+      contactUs: "تواصل معنا وكن جزء من المبادرة",
+        },
     // About
     about: {
       title: "التعريف بالمبادرة",
@@ -141,6 +141,7 @@ export const translations = {
       phoneValue: "+49 1575 5229655",
       successMessage: "تم إرسال رسالتك بنجاح. سنتواصل معك قريباً.",
       errorMessage: "حدث خطأ أثناء إرسال الرسالة. يرجى المحاولة مرة أخرى.",
+      joinInitiative: "انضم إلى المبادرة",
     },
     // Footer
     footer: {
@@ -186,7 +187,7 @@ export const translations = {
       title1: "Initiative",
       title2: "Scikeys",
       description: "Die Initiative Scikeys ist eine ehrenamtliche Initiative, die sich aus einer Gruppe syrischer Studierender und Akademiker zusammensetzt, die in Deutschland und Europa leben. Ihr Ziel ist die Entwicklung der Hochschulbildung in Syrien durch die Übertragung modernster Lehrpläne und Lehrmethoden, die an europäischen Universitäten angewendet werden, sowie die Förderung der wissenschaftlichen Forschung durch den Aufbau akademischer und kultureller Brücken zwischen Syrien und dem Ausland.",
-      contactUs: "Kontaktieren Sie uns",
+      contactUs: "Kontaktieren Sie uns und tragen Sie zur Initiative bei",
     },
     // About
     about: {
@@ -311,6 +312,7 @@ export const translations = {
       phoneValue: "+49 1575 5229655",
       successMessage: "Ihre Nachricht wurde erfolgreich gesendet. Wir werden uns in Kürze bei Ihnen melden.",
       errorMessage: "Beim Senden der Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
+      joinInitiative: "Initiative beitreten",
     },
     // Footer
     footer: {
@@ -356,7 +358,7 @@ export const translations = {
       title1: "Initiative",
       title2: "Scikeys",
       description: "The Scikeys Initiative is a voluntary initiative that consists of a group of Syrian students and academics living in Germany and Europe, with the goal of developing higher education in Syria through the transfer of modern curricula and teaching methods applied at European universities, as well as promoting scientific research through the building of academic and cultural bridges between Syria and the outside world.",
-      contactUs: "Contact Us",
+      contactUs: "Contact Us and Contribute to the Initiative",
     },
     // About
     about: {
@@ -481,6 +483,7 @@ export const translations = {
       phoneValue: "+49 1575 5229655",
       successMessage: "Your message has been sent successfully. We will contact you soon.",
       errorMessage: "An error occurred while sending the message. Please try again.",
+      joinInitiative: "Join the Initiative",
     },
     // Footer
     footer: {

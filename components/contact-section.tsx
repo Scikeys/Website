@@ -55,7 +55,6 @@ export default function ContactSection() {
     <section id="contact" className="section-container bg-secondary-custom">
       <h2 className="section-title">{t.contact.title}</h2>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
         <div>
           <p className="mb-8 text-lg">{t.contact.description}</p>
 
@@ -84,8 +83,17 @@ export default function ContactSection() {
               </div>
             </div>
           </div>
+
+          <div className="mt-8 flex justify-center">
+            <a
+              href="https://forms.gle/YhtWatbeQauFnu5B9"
+              className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary-custom hover:bg-primary-custom/90 transition-colors"
+            >
+              <Send className={`h-5 w-5 ${isRTL ? "ml-2" : "mr-2"}`} />
+              {t.contact.joinInitiative}
+            </a>
+          </div>
         </div>
-      </div>
-    </section>
+            </section>
   )
 }
