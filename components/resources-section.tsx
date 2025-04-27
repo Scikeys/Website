@@ -24,8 +24,7 @@ export default function ResourcesSection() {
       description: t.resources.flyerDescription,
       type: "pdf",
       icon: <FileText className="h-8 w-8 text-primary-custom" />,
- //     filename: isRTL ? "flyer_مفاتيح_العلوم.pdf" : "flyer_mafateeh_al_uloom.pdf",
- filename: "flyer_مفاتيح_العلوم.pdf",
+      filename: isRTL ? "flyer_مفاتيح_العلوم.pdf" : "flyer_scikeys.pdf",
     },
   ]
 
