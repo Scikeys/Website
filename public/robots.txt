@@ -1,0 +1,24 @@
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Disallow access to source code and sensitive files
+Disallow: /*.tsx
+Disallow: /*.ts
+Disallow: /*.js
+Disallow: /*.jsx
+Disallow: /app/
+Disallow: /components/
+Disallow: /contexts/
+Disallow: /lib/
+Disallow: /utils/
+Disallow: /styles/
+Disallow: /.env
+Disallow: /.git/
+Disallow: /node_modules/
+
+# Sitemap location
+Sitemap: https://scikeys.de/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 10 

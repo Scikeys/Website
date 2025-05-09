@@ -16,13 +16,18 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const [isInitialized, setIsInitialized] = useState(false)
   const [language, setLanguage] = useState<Language>("ar")
-  const isRTL = language === "ar"
+  const [isRTL, setIsRTL] = useState(true)
 
   // Initialize language and direction
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      const storedLanguage = localStorage.getItem("language") as Language
-      const initialLanguage = storedLanguage || "ar"
+      const browserLanguage = navigator.language.toLowerCase()
+      
+      // Set initial language based on browser language or stored preference
+      let initialLanguage: Language = "ar" // Default to Arabic
+      if (browserLanguage.startsWith("de")) {
+        initialLanguage = "de" // Switch to German if browser is in German
+      }
       
       // Set language state
       setLanguage(initialLanguage)

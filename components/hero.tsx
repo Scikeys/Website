@@ -19,8 +19,8 @@ export default function Hero() {
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
                 {isRTL ? (
                   <>
-                    <span className="block">مبادرة</span>
-                    <span className="block text-primary-custom">مفاتيح العلوم</span>
+                    <span className="block">{t.hero.title1}</span>
+                    <span className="block text-primary-custom">{t.hero.title2}</span>
                   </>
                 ) : (
                   <>

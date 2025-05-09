@@ -37,9 +37,9 @@ export default function Footer() {
         web: 'https://www.instagram.com/scikeys'
       },
       linkedin: {
-        ios: 'linkedin://profile/scikeys',
-        android: 'intent://linkedin.com/in/scikeys#Intent;package=com.linkedin.android;scheme=https;end',
-        web: 'https://www.linkedin.com/in/scikeys'
+        ios: 'linkedin://company/scikeys',
+        android: 'intent://linkedin.com/company/scikeys#Intent;package=com.linkedin.android;scheme=https;end',
+        web: 'https://www.linkedin.com/company/scikeys'
       },
       whatsapp: {
         ios: 'https://wa.me/4915755229655',
