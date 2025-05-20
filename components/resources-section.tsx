@@ -24,10 +24,10 @@ export default function ResourcesSection() {
       description: t.resources.flyerDescription,
       type: "pdf",
       icon: <FileText className="h-8 w-8 text-primary-custom" />,
-      filename: isRTL ? "flyer_مفاتيح_العلوم.pdf" : "flyer_scikeys.pdf",
+      filename: language === 'de' ? "flyer_scikeys.pdf" :"flyer_مفاتيح_العلوم.pdf",
     },
   ]
-
+console.log(language)
   const handleDownload = async (resource: { filename: string }) => {
     setIsDownloading(true)
 
