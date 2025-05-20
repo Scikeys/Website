@@ -32,10 +32,12 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
       // Set language state
       setLanguage(initialLanguage)
       
-      // Set direction immediately
-      document.documentElement.dir = initialLanguage === "ar" ? "rtl" : "ltr"
+      // Set direction based on language
+      const isRTLDirection = initialLanguage === "ar"
+      document.documentElement.dir = isRTLDirection ? "rtl" : "ltr"
       document.documentElement.lang = initialLanguage
-      document.body.classList.add(initialLanguage === "ar" ? "rtl" : "ltr")
+      document.body.classList.add(isRTLDirection ? "rtl" : "ltr")
+      setIsRTL(isRTLDirection)
       
       setIsInitialized(true)
     }
@@ -44,12 +46,14 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   // Update direction when language changes
   useEffect(() => {
     if (isInitialized && typeof window !== 'undefined') {
-      document.documentElement.dir = isRTL ? "rtl" : "ltr"
+      const isRTLDirection = language === "ar"
+      document.documentElement.dir = isRTLDirection ? "rtl" : "ltr"
       document.documentElement.lang = language
       document.body.classList.remove("rtl", "ltr")
-      document.body.classList.add(isRTL ? "rtl" : "ltr")
+      document.body.classList.add(isRTLDirection ? "rtl" : "ltr")
+      setIsRTL(isRTLDirection)
     }
-  }, [language, isRTL, isInitialized])
+  }, [language, isInitialized])
 
   const value = {
     language,
